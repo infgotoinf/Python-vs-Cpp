@@ -1,4 +1,4 @@
-# Bullet hand
+# Python vs Cpp
 ## Steps to build the project
 1. Enter nix-shell
 ```shell

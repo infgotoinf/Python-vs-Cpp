@@ -253,11 +253,17 @@ int main(void)
 
             if (game.gameover) {
                 constexpr static int text_size = 80;
-                constexpr static const char* gameover_text = "GAMEOVER";
-                DrawText(gameover_text
-                        , GetScreenWidth() / 2 - text_size * (strlen(gameover_text) / 2)
+                // constexpr static const char* gameover_text = "GAMEOVER";
+                // DrawText(gameover_text
+                //         , GetScreenWidth() / 2 - text_size * (strlen(gameover_text) / 2)
+                //         , GetScreenHeight() / 2 - text_size / 2
+                //         , text_size, RED);
+
+                constexpr static const char* win_text = "YOU WIN";
+                DrawText(win_text
+                        , GetScreenWidth() / 2 - text_size * (strlen(win_text) / 2)
                         , GetScreenHeight() / 2 - text_size / 2
-                        , text_size, RED);
+                        , text_size, GREEN);
 
                 constexpr static int small_text_size = 20;
                 constexpr static const char* guide_text = "PRESS [ENTER] TO TRY AGAIN";
