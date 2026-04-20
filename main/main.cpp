@@ -1,6 +1,5 @@
 #include "raylib.h"
 #include <cmath>
-#include <cstdlib>
 #include <cstring>
 
 
